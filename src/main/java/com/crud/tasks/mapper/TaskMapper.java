@@ -8,6 +8,7 @@ public class TaskMapper {
         return new Task (
                 taskDto.getId(),
                 taskDto.getTitle(),
-                taskDto.getContent());
+                taskDto.getContent()
+        );
     }
 }
