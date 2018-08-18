@@ -42,8 +42,8 @@ public class TaskController {
         service.deleteTask(taskId);
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "updateTask")
-    public TaskDto updateTask (TaskDto taskDto) {
+    @RequestMapping(method = RequestMethod.PUT, value = "updateTask")
+    public TaskDto updateTask (@RequestBody TaskDto taskDto) {
         return new TaskDto(1L, "Edited test title", "Test content");
     }
 
