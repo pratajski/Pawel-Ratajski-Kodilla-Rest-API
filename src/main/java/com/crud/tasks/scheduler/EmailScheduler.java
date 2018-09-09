@@ -29,12 +29,12 @@ public class EmailScheduler {
         if (size == 1) {
             simpleEmailService.send(new Mail(
                     adminConfig.getAdminMail(),
-                    SUBJECT, "Currently in database you got: " + size + " task")
+                    SUBJECT, "Currently in database you got: " + size + " task", null)
             );
         }else {
             simpleEmailService.send(new Mail(
                     adminConfig.getAdminMail(),
-                    SUBJECT, "Currently in database you got: " + size + " tasks")
+                    SUBJECT, "Currently in database you got: " + size + " tasks", null)
             );
         }
     }
