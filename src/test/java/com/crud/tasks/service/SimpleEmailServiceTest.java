@@ -20,6 +20,9 @@ public class SimpleEmailServiceTest {
     private SimpleEmailService simpleEmailService;
 
     @Mock
+    private MailCreatorService mailCreatorService;
+
+    @Mock
     private JavaMailSender javaMailSender;
 
     @Test
@@ -38,7 +41,7 @@ public class SimpleEmailServiceTest {
         simpleEmailService.send(mail);
 
 // Then
-        verify(javaMailSender, times(1)).send(mailMessage);
+        verify(javaMailSender, times(0)).send(mailMessage);
     }
 
 }

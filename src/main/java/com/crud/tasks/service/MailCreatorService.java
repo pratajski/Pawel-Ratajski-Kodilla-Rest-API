@@ -24,6 +24,7 @@ public class MailCreatorService {
     @Qualifier("templateEngine")
     private TemplateEngine templateEngine;
 
+ //   @Mock
     public String buildTrelloCardEmail(String message) {
         List<String> functionality = new ArrayList<>();
         functionality.add("You can manage your tasks");
